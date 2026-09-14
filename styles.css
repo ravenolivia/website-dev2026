@@ -13,23 +13,25 @@ header {
 
 .header-image {
     width: 100%;
-    height: 350px;
+    height: 500px;
     object-fit: cover;
 }
 
 .header-text {
     position: absolute;
-    top: 100px;
+    top: 80px;
+    left: 0;
     width: 100%;
 }
 
 .header-text h1 {
     font-size: 50px;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .header-text p {
     font-size: 20px;
+    margin-top: 10px;
 }
 
 nav {
@@ -38,10 +40,23 @@ nav {
     padding: 20px;
 }
 
+.nav-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 25px;
+    margin: 0 5px;
+}
+
 main {
     max-width: 1100px;
     margin: auto;
     padding: 30px;
+}
+
+
+section {
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -51,16 +66,16 @@ h2 {
 
 .about-section {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     background-color: #cccccc;
     padding: 30px;
-    margin-bottom: 40px;
     align-items: center;
 }
 
 .about-section img {
-    width: 50%;
-    max-width: 500px;
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
 }
 
 .about-text {
@@ -72,30 +87,36 @@ h2 {
 
 .post-list {
     display: flex;
-    gap: 20px;
 }
 
 .post {
+    display: flex;
+    gap: 30px;
     background-color: #ffffff;
-    padding: 15px;
-    flex: 1;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .post img {
-    width: 100%;
-    height: 180px;
+    width: 250px;
+    height: 350px;
     object-fit: cover;
 }
 
+.post-text {
+    flex: 1;
+    padding: 20px;
+}
+
 .post h3 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .featured-post {
     background-color: #000000;
     color: #ffffff;
     padding: 40px;
-    margin-top: 40px;
     text-align: center;
 }
 
