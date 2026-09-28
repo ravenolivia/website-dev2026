@@ -175,3 +175,24 @@ footer {
     text-align: center;
     padding: 25px;
 }
+
+.travel-stop {
+    background-color: #ddd5c4;
+    padding: 30px;
+}
+
+.travel-stop p {
+    max-width: 850px;
+    margin: 0 auto 25px auto;
+}
+
+.photo-row {
+    display: flex;
+    gap: 20px;
+}
+
+.photo-row img {
+    width: 33.33%;
+    height: 250px;
+    object-fit: cover;
+}
