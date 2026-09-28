@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #eeeeee;
-    color: #222222;
-    line-height: 1.5;
+    background-color: #f3efe6;
+    color: #2f3028;
+    line-height: 1.6;
 }
 
 header {
@@ -27,25 +27,36 @@ header {
 .header-text h1 {
     font-size: 50px;
     margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #333333;
 }
 
 .header-text p {
     font-size: 20px;
     margin-top: 10px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #333333;
 }
 
 nav {
     text-align: center;
-    background-color: #ffffff;
-    padding: 20px;
+    background-color: #354237;
+    padding: 15px;
 }
 
 .nav-button {
     display: inline-block;
-    background-color: #000000;
+    background-color: #354237;
     color: #ffffff;
-    padding: 10px 25px;
-    margin: 0 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+    background-color: #66745d;
 }
 
 main {
@@ -56,18 +67,25 @@ main {
 
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 h2 {
     text-align: center;
     font-size: 32px;
+    color: #354237;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #354237;
 }
 
 .about-section {
     display: flex;
     gap: 40px;
-    background-color: #cccccc;
+    background-color: #ddd5c4;
     padding: 30px;
     align-items: center;
 }
@@ -79,10 +97,14 @@ h2 {
 }
 
 .about-text {
-    background-color: #000000;
+    background-color: #4b3d32;
     color: #ffffff;
     padding: 30px;
     flex: 1;
+}
+
+.about-text h2 {
+    color: #ffffff;
 }
 
 .post-list {
@@ -96,6 +118,7 @@ h2 {
     padding: 20px;
     width: 100%;
     max-width: 800px;
+    border: 1px solid #c9c0ae;
 }
 
 .post img {
@@ -114,14 +137,39 @@ h2 {
 }
 
 .featured-post {
-    background-color: #000000;
+    background-color: #354237;
     color: #ffffff;
     padding: 40px;
     text-align: center;
 }
 
+.featured-post h2 {
+    color:#ffffff;
+}
+
 .more-posts {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #ddd5c4;
+    padding: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #a65d3b;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #7d432b;
+}
+
+footer {
+    background-color: #2f3028;
+    color: #ffffff;
+    text-align: center;
     padding: 25px;
 }
