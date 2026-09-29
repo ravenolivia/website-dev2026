@@ -196,3 +196,27 @@ footer {
     height: 250px;
     object-fit: cover;
 }
+
+.bucket-list {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px 50px;
+    border: 1px solid #c9c0ae;
+}
+
+.bucket-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.bucket-list a {
+    color: #354237;
+    text-decoration: underline;
+}
+
+.bucket-list a:hover,
+.bucket-list a:focus {
+    color: #a65d3b;
+}
+
