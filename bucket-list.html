@@ -84,6 +84,48 @@
         </section>
 
 
+        <section class="suggestion-form">
+
+            <h2>Suggest a Place to Visit</h2>
+
+            <p>
+                Do you know a bucket list worthy place I should add 
+                to my travel list? I'd love to hear your suggestions!
+            </p>
+
+            <form id="suggestionForm">
+
+                <p>
+                    <label for="visitorName">Your Name:</label>
+                    <input type="text" id="visitorName" name="visitorName"
+                           required>
+                </p>
+
+                <p>
+                    <label for="placeName">Place You Recommend:</label>
+                    <input type="text" id="placeName" name="placeName"
+                           placeholder="City, country, or national park"
+                           required>
+                </p>
+
+                <p>
+                    <label for="reason">Why Should I Visit?</label>
+                    <textarea id="reason" name="reason" rows="4"
+                              placeholder="Tell me what makes this place special!"
+                              required></textarea>
+                </p>
+
+                <button type="submit" class="button">
+                    Submit Suggestion
+                </button>
+
+            </form>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+
+        </section>
+
+
         <section class="featured-post">
 
             <h2>Where Have I Been?</h2>
@@ -102,17 +144,34 @@
 
     </main>
 
-
     <footer>
 
         <p>© 2026 My Travel Blog</p>
 
         <p>
             <a href="index.html">Home</a> |
+            <a href="bucket-list.html">Bucket List</a> |
+            <a href="travels.html">My Travels</a>
         </p>
+        
+    </footer>   
 
-    </footer>
+    <script>
+        const suggestionForm = document.getElementById("suggestionForm");
 
+        suggestionForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const visitorName = document.getElementById("visitorName").value;
+            const placeName = document.getElementById("placeName").value;
+
+            document.getElementById("formMessage").textContent =
+                "Thank you, " + visitorName + "! " + placeName +
+                " has been added to my list of suggestions.";
+
+            suggestionForm.reset();
+        });
+    </script>
 
 </body>
 
