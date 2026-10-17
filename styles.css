@@ -215,6 +215,16 @@ footer a:focus {
     border-radius: 4px;
 }
 
+.nrg-landscape {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    margin: 25px auto;
+    border-radius: 4px;
+}
+
 main ul {
     max-width: 850px;
     margin: 0 auto 25px;
